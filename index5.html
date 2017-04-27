@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>box-shadow Demo</title>
+    <style type="text/css">
+    	.text-shadow {
+    		width: 200px;
+    		height: 300px;
+    		border-radius: 5px;
+    		border: 1px solid #ccc;
+    		margin: 20px;
+    	}
+
+    	.top {
+    		box-shadow: 0 -2px 5px  -3px red;
+    	}
+
+    	.right {
+    		box-shadow: 2px 0 5px -3px green;
+    	}
+
+    	.bottom {
+    		box-shadow: 0 2px 5px -3px blue;
+    	}
+
+    	.left {
+    		box-shadow: -2px 0 5px -3px green;
+
+    	}
+    </style>
+</head>
+
+<body>
+    <div class="text-shadow top"></div>
+    <div class="text-shadow right"></div>
+    <div class="text-shadow bottom"></div>
+    <div class="text-shadow left"></div>
+</body>
+</html>
