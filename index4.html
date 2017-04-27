@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>伪元素</title>
+    <style type="text/css">
+    p::first-line {
+        font: italic 16px/18px Georgia;
+        color: #903;
+    }
+    
+    p::first-letter {
+        float: left;
+        font: italic 70px/80px Georgia;
+        color: #903;
+    }
+    
+    #example:before {
+        content: "#";
+        display: block;
+        width: 100px;
+        height: 100px;
+    }
+    
+    #example:after {
+        content: "#";
+        display: block;
+        width: 100px;
+        height: 100px;
+    }
+
+    #test::before {
+    	content: attr(href);
+    }
+    #triangle-up {
+	width: 0;
+	height: 0;
+	/*border-left: 50px solid transparent;
+	border-right: 50px solid transparent;*/
+    border-bottom: 400px solid green;
+}
+    </style>
+</head>
+
+<body>
+    <!-- <p id="example">
+        Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the Amazon Web Services (AWS) cloud where you can launch AWS resources in a virtual network that you define. You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways. You can use both IPv4 and IPv6 in your VPC for secure and easy access to resources and applications.
+    </p>
+    <a id="test" href="#test">哈哈</a> -->
+    <div id="triangle-up"></div>
+</body>
+
+</html>
